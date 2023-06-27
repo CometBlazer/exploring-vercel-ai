@@ -9,7 +9,7 @@ export default function Chat() {
     <div className="mx-auto w-full max-w-md py-24 flex flex-col stretch">
       {messages.length > 0
         ? messages.map((m) => (
-            <div key={m.id} class="white-text">
+            <div key={m.id} className="white-text">
               {m.role === "user" ? "You: " : "Alex: "}
               {m.content}
             </div>
